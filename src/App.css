@@ -1,38 +1,134 @@
 .App {
-  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 123px;
+  margin-top: 63px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header span {
+  font-size: 48px;
+  /* identical to box height */
+  color: #000000;
+  margin-left: 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonLeft,
+.buttonRight {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.onOff {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.on-off {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 70px;
+  font-size: 36px;
+  margin: 50px;
+}
+
+/* .goNoWay {
+  width: 250px;
+  height: 145.83px;
+
+  box-sizing: border-box;
+  border-radius: 6px;
   color: white;
+  font-size: 48px;
+} */
+.ready-to-go {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  border: rgba(10, 10, 10, 0.4) solid 0.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.isGo {
+  background-color: #46ac4a;
+  border: 1px solid #908f8f;
+  width: 250px;
+  height: 145.83px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  line-height: 145px;
+}
+.isNoWay {
+  background-color: #d34848;
+  border: 1px solid #908f8f;
+  width: 250px;
+  height: 145.83px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: white;
+  font-size: 48px;
+  line-height: 145px;
+  text-align: center;
+}
+.isOn {
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 120px;
+  height: 70px;
+  background: #5c48d3;
+  border: 1px solid #908f8f;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.isOff {
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 120px;
+  height: 70px;
+  background: #ffffff;
+  border: 1px solid #908f8f;
+  color: #5c48d3;
+}
+.rst {
+  display: flex;
+  justify-content: center;
+}
+.reset {
+  background-color: #908f8f;
+  border: 1px solid #908f8f;
+  width: 120px;
+  height: 70px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  /* line-height: 145px; */
+}
+
+@media (max-width: 1020px) {
+  .ready-to-go {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    /*    margin-right: 100px; */
+    /*  margin-top: 200px; */
   }
-  to {
-    transform: rotate(360deg);
+  .on-off {
+    margin: 20px;
   }
 }
